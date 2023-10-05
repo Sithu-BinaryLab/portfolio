@@ -61,33 +61,15 @@ function Spotlight() {
           className="w-full h-full"
           style={{ background: "rgba(16, 28, 57, 0.85)" }}
         >
-          {/* <div className="grid grid-flow-row-dense grid-cols-3 md:gap-20 pl-light md:pl-md-light lg:pl-lg-light">
-            <div className="col-span-1 text-white md:pt-24">
+          <div className="flex flex-wrap justify-center overflow-x-scroll md:space-x-3">
+            <div className="w-full max-w-screen-md md:w-5/12 md:sticky  md:top-0 text-white md:pt-24 overflow-hidden">
               <ProfileComponent />
               <TabComponent />
               <div className="absolute bottom-24">
                 <ConnectLink />
               </div>
             </div>
-            <div className="col-span-2 h-screen overflow-y-scroll pr-md-light px-4">
-              <AboutComponent />
-              <ExperienceComponent />
-              <FullResumeComponent />
-              <ProjectComponent />
-              <FullProjectComponent />
-              <FooterComponent />
-            </div>
-          </div> */}
-          <div className="lg:mx-auto lg:flex h-screen lg:justify-center overflow-y-scroll">
-            <div className="lg:w-5/12 lg:sticky lg:top-0 text-white md:pt-24 overflow-hidden">
-              <ProfileComponent />
-              <TabComponent />
-              <div className="absolute bottom-24">
-                <ConnectLink />
-              </div>
-            </div>
-
-            <div className="lg:w-5/12">
+            <div className="h-screen w-full max-w-screen-md md:w-5/12">
               <AboutComponent />
               <ExperienceComponent />
               <FullResumeComponent />
@@ -96,6 +78,7 @@ function Spotlight() {
               <FooterComponent />
             </div>
           </div>
+          ;
         </div>
       </div>
     </div>
