@@ -8,22 +8,22 @@ function Spotlight() {
   const [spotlightPosition, setSpotlightPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const updateSpotlight = (e) => {
+    const updateSpotlight = (e: any) => {
       const x = (e.pageX / window.innerWidth) * 100;
       const y = (e.pageY / window.innerHeight) * 100;
       setSpotlightPosition({ x, y });
     };
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: any) => {
       updateSpotlight(e);
     };
 
-    const handleMouseDown = (e) => {
+    const handleMouseDown = (e: any) => {
       setSpotlightSize("transparent 10%, rgba(0, 0, 0, 0.9) 25%");
       updateSpotlight(e);
     };
 
-    const handleMouseUp = (e) => {
+    const handleMouseUp = (e: any) => {
       setSpotlightSize("transparent 20%, rgba(0, 0, 0, 0.7) 30%");
       updateSpotlight(e);
     };
