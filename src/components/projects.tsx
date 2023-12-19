@@ -1,8 +1,12 @@
 import React from "react";
 
-export const ProjectComponent = () => {
+interface projectProps {
+  projectRef: any
+}
+
+export const ProjectComponent = ({ projectRef }: projectProps) => {
   return (
-    <div id="projects">
+    <div id="projects" ref={projectRef}>
       <div
         className="flex space-x-8 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor"
         style={{ borderColor: "#1c2a46" }}

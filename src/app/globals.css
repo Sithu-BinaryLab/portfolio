@@ -17,9 +17,11 @@
 } */
 
 body {
-    background:#101c39;
+  background: #101c39;
+  margin: 0;
 }
 
 .box:hover {
-  border-color: #1c2a46; /* Border color on hover */
+  border-color: #1c2a46;
+  /* Border color on hover */
 }

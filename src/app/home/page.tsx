@@ -45,7 +45,7 @@ function Spotlight() {
 
   return (
     <div
-      className="relative h-screen bg-cover bg-no-repeat bg-center"
+      className="relative h-screen  bg-cover bg-no-repeat bg-center"
       style={{
         backgroundImage:
           "url(https://images.unsplash.com/photo-1487525219605-eadb39ae229c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=982&q=80)",

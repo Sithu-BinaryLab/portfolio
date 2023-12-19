@@ -1,8 +1,12 @@
 import React from "react";
 
-export const AboutComponent = () => {
+interface aboutProps {
+  aboutRef: any;
+}
+
+export const AboutComponent = ({ aboutRef }: aboutProps) => {
   return (
-    <div className="pt-24 px-4" id="about">
+    <div className="pt-24 px-4" id="about" ref={aboutRef}>
       <p className="text-primaryColor">
         Back in 2012, I decided to try my hand at creating custom Tumblr themes
         and tumbled head first into the rabbit hole of coding and web

@@ -1,8 +1,10 @@
 import React from "react";
-
-export const ExperienceComponent = () => {
+interface experienceProps {
+  expRef: any;
+}
+export const ExperienceComponent = ({ expRef }: experienceProps) => {
   return (
-    <div id="experience">
+    <div id="experience" ref={expRef}>
       <div className="pt-28">
         <div
           className="flex space-x-8 hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor"

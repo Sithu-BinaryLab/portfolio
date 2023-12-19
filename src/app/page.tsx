@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // components
 import { ProfileComponent } from "@/components/side-bar/profile";
@@ -13,6 +13,12 @@ import { FullProjectComponent } from "@/components/full-project";
 import { FooterComponent } from "@/components/footer";
 
 function Spotlight() {
+
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  const containerRef = useRef(null);
+  const expRef = useRef(null);
+
   const [spotlightSize, setSpotlightSize] = useState(
     "transparent 10%, rgba(0, 0, 0, 0.8) 30%"
   );
@@ -54,26 +60,27 @@ function Spotlight() {
     backgroundImage: `radial-gradient(circle at ${spotlightPosition.x}% ${spotlightPosition.y}%, ${spotlightSize})`,
   };
 
+
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen overflow-hidden">
       <div className="spotlight absolute h-full  w-full" style={spotlightStyle}>
         <div
           className="w-full h-full"
           style={{ background: "rgba(16, 28, 57, 0.85)" }}
         >
-          <div className="flex flex-wrap justify-center overflow-x-scroll md:space-x-3">
+          <div ref={containerRef} className="flex flex-wrap justify-center overflow-x-scroll md:space-x-3">
             <div className="w-full max-w-screen-md md:w-5/12 md:sticky  md:top-0 text-white md:pt-24 overflow-hidden">
               <ProfileComponent />
-              <TabComponent />
+              <TabComponent aboutRef={aboutRef} projectRef={projectRef} expRef={expRef} containerRef={containerRef} />
               <div className="absolute bottom-24">
                 <ConnectLink />
               </div>
             </div>
             <div className="h-screen w-full max-w-screen-md md:w-5/12">
-              <AboutComponent />
-              <ExperienceComponent />
+              <AboutComponent aboutRef={aboutRef} />
+              <ExperienceComponent expRef={expRef} />
               <FullResumeComponent />
-              <ProjectComponent />
+              <ProjectComponent projectRef={projectRef} />
               <FullProjectComponent />
               <FooterComponent />
             </div>
