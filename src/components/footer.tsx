@@ -2,7 +2,7 @@ import React from "react";
 
 export const FooterComponent = () => {
   return (
-    <div className="pt-2 pb-24 px-4">
+    <div className="pt-2 pb-24">
       <p className="text-primaryColor text-sm">
         Loosely designed
         <span className="text-highLightColor">in</span> Visual Studio Code by

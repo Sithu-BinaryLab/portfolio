@@ -6,7 +6,8 @@ interface aboutProps {
 
 export const AboutComponent = ({ aboutRef }: aboutProps) => {
   return (
-    <div className="pt-24 px-4" id="about" ref={aboutRef}>
+    <div className="" id="about" ref={aboutRef}>
+      <div className="sticky top-0 z-20 -ml-6 -mr-14 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"><h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2></div>
       <p className="text-primaryColor">
         Back in 2012, I decided to try my hand at creating custom Tumblr themes
         and tumbled head first into the rabbit hole of coding and web

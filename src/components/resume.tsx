@@ -7,7 +7,7 @@ export const FullResumeComponent = () => {
     router.push("/resume.pdf");
   };
   return (
-    <div className="pt-10 pb-24 px-4">
+    <div className="py-10 ">
       <span
         className="text-titleColor hover:border-b pb-2"
         onClick={goToResume}

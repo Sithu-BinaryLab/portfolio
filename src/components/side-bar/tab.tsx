@@ -46,11 +46,11 @@ export const TabComponent = ({ aboutRef, projectRef, expRef, containerRef }: Tab
   }
 
   return (
-    <div className="pt-20">
+    <div className="nav hidden lg:block">
       <div className="flex space-x-4">
         <hr className={` h-[0.05px] rounded-full bg-tabActive my-auto ${isActiveTab(aboutRef, expRef) ? "w-24" : "w-10"}`}></hr>
         <button
-          className={`text-xs text-seconTitleColor ${isActiveTab(aboutRef, expRef) ? "text-white font-bold" : ""
+          className={`text-xs text-seconTitleColor tracking-widest ${isActiveTab(aboutRef, expRef) ? "text-white font-bold" : ""
             }`}
         >
           <a href="#about">ABOUT</a>
@@ -58,7 +58,7 @@ export const TabComponent = ({ aboutRef, projectRef, expRef, containerRef }: Tab
       </div>
       <div className="flex space-x-4">
         <hr className={`h-[0.05px] rounded-full bg-tabActive my-auto ${isActiveTab(expRef, projectRef) ? "w-24" : "w-10"}`}></hr>
-        <button className={` text-xs text-seconTitleColor py-5 ${isActiveTab(expRef, projectRef) ? "text-white font-bold" : ""
+        <button className={` text-xs text-seconTitleColor tracking-widest py-5 ${isActiveTab(expRef, projectRef) ? "text-white font-bold" : ""
           }`}>
           <a href="#experience">EXPERIENCE</a>
         </button>
@@ -66,7 +66,7 @@ export const TabComponent = ({ aboutRef, projectRef, expRef, containerRef }: Tab
       <div className="flex space-x-4">
         <hr className={`h-[0.05px] rounded-full bg-tabActive my-auto ${isActiveTab(projectRef, "") ? "w-24" : "w-10"}`}></hr>
         <button
-          className={`text-xs text-seconTitleColor ${isActiveTab(projectRef, "") ? "text-white font-bold" : ""}`}
+          className={`text-xs text-seconTitleColor tracking-widest ${isActiveTab(projectRef, "") ? "text-white font-bold" : ""}`}
         >
           {" "}
           <a href="#projects">PROJECTS</a>

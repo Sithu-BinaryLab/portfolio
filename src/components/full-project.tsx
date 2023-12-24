@@ -8,7 +8,7 @@ export const FullProjectComponent = () => {
     router.push("/archive");
   };
   return (
-    <div className="pt-2 pb-24 px-4" onClick={goToArchive}>
+    <div className="pt-2 pb-24" onClick={goToArchive}>
       <span className="text-titleColor hover:border-b hover:border-white pb-2">
         View Full Project Archive
       </span>

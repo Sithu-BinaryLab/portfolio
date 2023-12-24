@@ -17,9 +17,10 @@
 } */
 
 body {
-  background: #101c39;
+  background-color: rgb(15 23 42/1);
   margin: 0;
 }
+
 
 .box:hover {
   border-color: #1c2a46;

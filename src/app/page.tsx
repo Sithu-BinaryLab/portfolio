@@ -19,64 +19,31 @@ function Spotlight() {
   const containerRef = useRef(null);
   const expRef = useRef(null);
 
-  const [spotlightSize, setSpotlightSize] = useState(
-    "transparent 10%, rgba(0, 0, 0, 0.8) 30%"
-  );
   const [spotlightPosition, setSpotlightPosition] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
-    const updateSpotlight = (e: any) => {
-      const x = (e.pageX / window.innerWidth) * 100;
-      const y = (e.pageY / window.innerHeight) * 100;
-      setSpotlightPosition({ x, y });
-    };
-
-    const handleMouseMove = (e: any) => {
-      updateSpotlight(e);
-    };
-
-    const handleMouseDown = (e: any) => {
-      setSpotlightSize("transparent 10%, rgba(16, 28, 57, 0.9) 25%");
-      updateSpotlight(e);
-    };
-
-    const handleMouseUp = (e: any) => {
-      setSpotlightSize("transparent 20%, rgba(16, 28, 57,  0.7) 30%");
-      updateSpotlight(e);
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mousedown", handleMouseDown);
-    window.addEventListener("mouseup", handleMouseUp);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mousedown", handleMouseDown);
-      window.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, []);
-
-  const spotlightStyle = {
-    backgroundImage: `radial-gradient(circle at ${spotlightPosition.x}% ${spotlightPosition.y}%, ${spotlightSize})`,
+  const handleMouseMove = (e: any) => {
+    setSpotlightPosition({ x: e.clientX, y: e.clientY });
   };
 
-
   return (
-    <div className="relative h-screen overflow-hidden">
-      <div className="spotlight absolute h-full  w-full" style={spotlightStyle}>
+    <div ref={containerRef} className="relative h-screen overflow-y-scroll"
+    >
+      <div onMouseMove={handleMouseMove} className="fixed inset-0 z-30 transition duration-300 lg:absolute" style={{ background: `radial-gradient(600px at ${spotlightPosition.x}px ${spotlightPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)` }}
+      ></div>
+      <div className="spotlight absolute h-full  w-full sticky"
+      >
         <div
-          className="w-full h-full"
-          style={{ background: "rgba(16, 28, 57, 0.85)" }}
+          className="w-full h-screen "
         >
-          <div ref={containerRef} className="flex flex-wrap justify-center overflow-x-scroll md:space-x-3">
-            <div className="w-full max-w-screen-md md:w-5/12 md:sticky  md:top-0 text-white md:pt-24 overflow-hidden">
+          <div className="mx-auto flex lg:flex-row flex-col min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-x-4 ">
+            <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
               <ProfileComponent />
               <TabComponent aboutRef={aboutRef} projectRef={projectRef} expRef={expRef} containerRef={containerRef} />
-              <div className="absolute bottom-24">
+              <div className="ml-1 mt-8 flex items-center">
                 <ConnectLink />
               </div>
             </div>
-            <div className="h-screen w-full max-w-screen-md md:w-5/12">
+            <div className="pt-24 lg:w-1/2 lg:py-24">
               <AboutComponent aboutRef={aboutRef} />
               <ExperienceComponent expRef={expRef} />
               <FullResumeComponent />
