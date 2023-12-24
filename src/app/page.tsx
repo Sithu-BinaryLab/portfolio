@@ -26,36 +26,37 @@ function Spotlight() {
   };
 
   return (
-    <div ref={containerRef} className="relative h-screen overflow-y-scroll"
-    >
-      <div onMouseMove={handleMouseMove} className="fixed inset-0 z-30 transition duration-300 lg:absolute" style={{ background: `radial-gradient(600px at ${spotlightPosition.x}px ${spotlightPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)` }}
+    <div ref={containerRef} className="relative h-screen overflow-y-scroll">
+      <div
+        onMouseMove={handleMouseMove}
+        className="fixed inset-0 z-30 transition duration-300 lg:absolute"
+        style={{
+          background: `radial-gradient(600px at ${spotlightPosition.x}px ${spotlightPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+        }}
       ></div>
-      <div className="spotlight absolute h-full  w-full sticky"
-      >
-        <div
-          className="w-full h-screen "
-        >
-          <div className="mx-auto flex lg:flex-row flex-col min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-x-4 ">
-            <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
-              <ProfileComponent />
-              <TabComponent aboutRef={aboutRef} projectRef={projectRef} expRef={expRef} containerRef={containerRef} />
-              <div className="ml-1 mt-8 flex items-center">
-                <ConnectLink />
-              </div>
-            </div>
-            <div className="pt-24 lg:w-1/2 lg:py-24">
-              <AboutComponent aboutRef={aboutRef} />
-              <ExperienceComponent expRef={expRef} />
-              <FullResumeComponent />
-              <ProjectComponent projectRef={projectRef} />
-              <FullProjectComponent />
-              <FooterComponent />
-            </div>
+      <div className="mx-auto flex lg:flex-row flex-col max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-x-4">
+        {/* Left Column - Sticky */}
+        <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+          <ProfileComponent />
+          <TabComponent aboutRef={aboutRef} projectRef={projectRef} expRef={expRef} containerRef={containerRef} />
+          <div className="ml-1 mt-8 flex items-center">
+            <ConnectLink />
           </div>
-          ;
         </div>
+
+        {/* Right Column - Scrolling */}
+        <div className="pt-24 lg:w-1/2 lg:py-24">
+          <AboutComponent aboutRef={aboutRef} />
+          <ExperienceComponent expRef={expRef} />
+          <FullResumeComponent />
+          <ProjectComponent projectRef={projectRef} />
+          <FullProjectComponent />
+          <FooterComponent />
+        </div>
+
       </div>
     </div>
+
   );
 }
 
