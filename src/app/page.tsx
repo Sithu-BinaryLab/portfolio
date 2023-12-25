@@ -26,13 +26,15 @@ function Spotlight() {
   };
 
   return (
-    <div ref={containerRef} className="relative h-screen overflow-y-scroll">
+    <div ref={containerRef} className="relative h-screen overflow-y-scroll"
+      onMouseMove={handleMouseMove}
+      style={{
+        background: `radial-gradient(600px at ${spotlightPosition.x}px ${spotlightPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+      }}
+    >
       <div
-        onMouseMove={handleMouseMove}
         className="lg:fixed inset-0 z-30 transition duration-300 lg:absolute"
-        style={{
-          background: `radial-gradient(600px at ${spotlightPosition.x}px ${spotlightPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
-        }}
+
       ></div>
       <div className="mx-auto flex lg:flex-row flex-col max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-x-4">
         {/* Left Column - Sticky */}
