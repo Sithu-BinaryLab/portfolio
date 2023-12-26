@@ -4,7 +4,7 @@ const PDFViewer = () => {
   return (
     <div>
       <iframe
-        src="https://drive.google.com/file/d/1eIM4IH_BHraDB12nL3zJEhuQuBmgG0gg/view?usp=sharing"
+        src="https://eimaung.com/rockstar-developer/Rockstar-Developer-by-Ei.Maung.pdf"
         width="100%"
         className="h-screen"
       />
