@@ -7,9 +7,9 @@ export const FullResumeComponent = () => {
     router.push("/resume.pdf");
   };
   return (
-    <div className="py-10 ">
+    <div className="py-10">
       <span
-        className="text-titleColor hover:border-b pb-2"
+        className="cursor-pointer text-titleColor hover:border-b pb-2"
         onClick={goToResume}
       >
         View Full Résumé

@@ -4,7 +4,7 @@ const PDFViewer = () => {
   return (
     <div>
       <iframe
-        src="https://drive.google.com/file/d/1eIM4IH_BHraDB12nL3zJEhuQuBmgG0gg/view"
+        src="https://drive.google.com/file/d/1eIM4IH_BHraDB12nL3zJEhuQuBmgG0gg/view?usp=sharing"
         width="100%"
         className="h-screen"
       />
