@@ -17,7 +17,7 @@
 } */
 
 body {
-  background-color: rgb(15 23 42/1);
+  background-color: rgb(15 23 42/1) !important;
   margin: 0;
 }
 
