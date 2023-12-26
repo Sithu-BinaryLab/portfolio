@@ -21,7 +21,8 @@ function Spotlight() {
 
 
   return (
-    <div ref={containerRef} className="relative h-screen overflow-y-scroll">
+    <div ref={containerRef} className="relative h-screen overflow-y-scroll"
+    >
       <div className="mx-auto flex lg:flex-row flex-col max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-x-4">
         {/* Left Column - Sticky */}
         <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
