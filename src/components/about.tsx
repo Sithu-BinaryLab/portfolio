@@ -21,7 +21,7 @@ export const AboutComponent = ({ aboutRef }: aboutProps) => {
       <p className="text-primaryColor pt-6">
         My main focus these days is building products and leading projects for
         our clients at <span className="text-highLightColor"> Upstatement</span>
-        . In my free time I've also released an
+        . In my free time I&apos;ve also released an
         <span className="text-secondPrimaryColor"> online video course </span>
         that covers everything you need to know to build a web app with the
         Spotify API.
