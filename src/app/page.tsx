@@ -20,8 +20,18 @@ function Spotlight() {
   const expRef = useRef(null);
 
 
+  const [spotlightPosition, setSpotlightPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: any) => {
+    setSpotlightPosition({ x: e.clientX, y: e.clientY });
+  };
+
   return (
     <div ref={containerRef} className="relative h-screen overflow-y-scroll"
+      onMouseMove={handleMouseMove}
+      style={{
+        background: `radial-gradient(600px at ${spotlightPosition.x}px ${spotlightPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+      }}
     >
       <div className="mx-auto flex lg:flex-row flex-col max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-x-4">
         {/* Left Column - Sticky */}
