@@ -3,7 +3,7 @@ import React from "react";
 export const ProfileComponent = () => {
   return (
     <div>
-      <h1 className="text-secondPrimaryColor text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Sithu Lwin</h1>
+      <h1 className="text-secondPrimaryColor text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Si Thu Lwin</h1>
       <h1 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
         Frontend Developer
       </h1>
