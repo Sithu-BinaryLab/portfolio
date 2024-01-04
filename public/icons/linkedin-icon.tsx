@@ -1,8 +1,14 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const LinkedInIcon = () => {
+  const router = useRouter();
+
+  const goToLinkedIn = () => {
+    router.push("https://www.linkedin.com/in/sithulwin/");
+  };
   return (
-    <div>
+    <div onClick={goToLinkedIn} className="cursor-pointer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"

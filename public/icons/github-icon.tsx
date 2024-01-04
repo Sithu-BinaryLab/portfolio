@@ -1,8 +1,14 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const GithubIcon = () => {
+  const router = useRouter();
+
+  const goToGithub = () => {
+    router.push("https://github.com/Sithu-BinaryLab");
+  };
   return (
-    <div className="cursor-pointer">
+    <div className="cursor-pointer" onClick={goToGithub}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"

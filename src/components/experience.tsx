@@ -4,21 +4,29 @@ interface experienceProps {
 }
 export const ExperienceComponent = ({ expRef }: experienceProps) => {
   return (
-    <div id="experience" className="max-w-screen-md flex gap-y-10 flex-col mt-20" ref={expRef}>
-      <div className="sticky top-0 z-20 -mx-6 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"><h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2></div>
+    <div
+      id="experience"
+      className="max-w-screen-md flex gap-y-10 flex-col mt-20"
+      ref={expRef}
+    >
+      <div className="sticky top-0 z-20 -mx-6 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+          Experience
+        </h2>
+      </div>
       <div className="">
         <div
           className="flex flex-col lg:flex-row lg:space-x-8  hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor"
           style={{ borderColor: "#1c2a46" }}
         >
           <div className="text-seconTitleColor flex-none text-sm pt-1">
-            2018 - PRESENT
+            2023 - PRESENT
           </div>
           <div className="">
             <h1 className="text-titleColor text-lg">
-              Lead Engineer . Upstatement
+              Frontend Developer . Binary Lab
             </h1>
-            <h4 className="text-seconTitleColor">Senior Engineer</h4>
+            <h4 className="text-seconTitleColor">Senior Frontend Developer</h4>
             <p className="text-primaryColor text-md py-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In
               adipisci temporibus nostrum praesentium laboriosam! Quaerat
@@ -31,13 +39,13 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                React
+                Next JS
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                Javascript
+                RQuery
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
@@ -61,13 +69,13 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
           style={{ borderColor: "#1c2a46" }}
         >
           <div className="text-seconTitleColor flex-none  text-sm pt-1">
-            JULY - DEC 2017
+            SEP - DEC 2022
           </div>
           <div className="">
             <h1 className="text-titleColor text-lg">
-              UI Engineer Co-op . Apple
+              Developer . Ultimate Solutions
             </h1>
-            <h4 className="text-seconTitleColor">Senior Engineer</h4>
+            <h4 className="text-seconTitleColor">Mid Frontend Developer</h4>
             <p className="text-primaryColor text-md py-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In
               adipisci temporibus nostrum praesentium laboriosam! Quaerat
@@ -80,13 +88,13 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                React
+                Next JS
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                Javascript
+                SWR
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
@@ -98,7 +106,7 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                Tailwind
+                MUI
               </button>
             </div>
           </div>
@@ -109,14 +117,14 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
           className="flex flex-col lg:flex-row lg:space-x-8 hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor"
           style={{ borderColor: "#1c2a46" }}
         >
-          <div className="text-seconTitleColor flex-none  text-sm pt-1 w-32">
-            2016 - 2017
+          <div className="text-seconTitleColor flex-none  text-sm pt-1 w-24">
+            2020 - 2022
           </div>
           <div className="">
             <h1 className="text-titleColor text-lg">
-              Developer . Scout Studio
+              Developer . Myanmar High Society
             </h1>
-            <h4 className="text-seconTitleColor">Senior Engineer</h4>
+            <h4 className="text-seconTitleColor">Mid Frontend Developer</h4>
             <p className="text-primaryColor text-md py-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In
               adipisci temporibus nostrum praesentium laboriosam! Quaerat
@@ -135,13 +143,13 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                Javascript
+                Redux
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                TypeScript
+                Bootstrap
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-white"
