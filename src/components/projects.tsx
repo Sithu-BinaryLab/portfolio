@@ -1,10 +1,14 @@
 import React from "react";
-
+import { useRouter } from "next/navigation";
 interface projectProps {
   projectRef: any;
 }
 
 export const ProjectComponent = ({ projectRef }: projectProps) => {
+  const router = useRouter();
+  const goToProjectLink = (link: string) => {
+    router.push(link);
+  };
   return (
     <div id="projects" ref={projectRef}>
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -13,8 +17,9 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
         </h2>
       </div>
       <div
-        className="flex flex-col lg:flex-row gap-y-4 lg:space-x-8 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor"
+        className="flex flex-col lg:flex-row gap-y-4 lg:space-x-8 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor cursor-pointer"
         style={{ borderColor: "#1c2a46" }}
+        onClick={() => goToProjectLink("https://newsmast.org")}
       >
         <img
           src="/images/newsmast_logo.jpg"
@@ -32,8 +37,9 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
         </div>
       </div>
       <div
-        className="flex flex-col lg:flex-row  gap-y-4 lg:space-x-8 my-12 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor"
+        className="flex flex-col lg:flex-row  gap-y-4 lg:space-x-8 my-12 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor cursor-pointer"
         style={{ borderColor: "#1c2a46" }}
+        onClick={() => goToProjectLink("https://www.gescchinese.com/")}
       >
         <img
           src="/images/gesc_admin.webp"
@@ -54,8 +60,9 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
         </div>
       </div>
       <div
-        className="flex flex-col lg:flex-row gap-y-4 lg:space-x-8 my-12 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor"
+        className="flex flex-col lg:flex-row gap-y-4 lg:space-x-8 my-12 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor cursor-pointer"
         style={{ borderColor: "#1c2a46" }}
+        onClick={() => goToProjectLink("https://www.mypetmm.com/")}
       >
         <img
           src="/images/mypet.webp"

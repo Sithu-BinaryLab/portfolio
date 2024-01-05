@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
-import Router from "next/router";
+
 interface experienceProps {
   expRef: any;
 }
