@@ -5,7 +5,7 @@ const PDFViewer = () => {
     <div className="h-screen">
       <iframe
         title="PDF Viewer"
-        src="https://drive.google.com/file/d/11YgNERfxZ-qwJ6ZKsvrN_sxX77JiPd8d/view?usp=sharing"
+        src="https://drive.google.com/file/d/1eIM4IH_BHraDB12nL3zJEhuQuBmgG0gg/preview"
         width="100%"
         height="700px" // Adjust the height as needed
         frameBorder="0"
