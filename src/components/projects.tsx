@@ -17,9 +17,9 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
         style={{ borderColor: "#1c2a46" }}
       >
         <img
-          src="/images/newsmast_logo.jpeg"
-          className="border border-hoverColor rounded-md lg:w-full w-40 h-20"
-          alt="Picture of the author"
+          src="/images/newsmast_logo.jpg"
+          className="border border-hoverColor rounded-md w-40 h-20"
+          alt="Picture of newsmast"
         />
 
         <div>
@@ -36,7 +36,7 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
         style={{ borderColor: "#1c2a46" }}
       >
         <img
-          src="/images/project3.png"
+          src="/images/gesc_admin.webp"
           className="border border-hoverColor rounded-md w-40 h-20"
           alt="Picture of the author"
         />
@@ -46,9 +46,10 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
             GESC Chinese Language Centre Admin Dashboard
           </h1>
           <p className="text-primaryColor text-md py-2">
-            Spotify gives you instant access to millions of songs – from old
-            favorites to the latest hits. Just hit play to stream anything you
-            like.
+            Developed an advanced admin dashboard tailored for language centers,
+            functioning as a comprehensive ERP system to efficiently manage and
+            streamline diverse operations, from student enrollment, ...
+            {/* scheduling to resource allocation and performance tracking. */}
           </p>
         </div>
       </div>
@@ -57,14 +58,14 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
         style={{ borderColor: "#1c2a46" }}
       >
         <img
-          src="/images/project2.jpeg"
+          src="/images/mypet.webp"
           className="border border-hoverColor rounded-md w-40 h-20"
           alt="Picture of the author"
         />
 
         <div>
           <h1 className="text-titleColor text-lg">
-            MyPet | Myanmar&apos;s Best Pet Supplies! MyPet
+            MyPet | Myanmar&apos;s Best Pet Supplies!
           </h1>
           <p className="text-primaryColor text-md py-2">
             MyPet is an online Pet Store in Myanmar. Dog Food & Snack, Cat Food

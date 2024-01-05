@@ -1,8 +1,15 @@
 import React from "react";
+import { useRouter } from "next/navigation";
+import Router from "next/router";
 interface experienceProps {
   expRef: any;
 }
 export const ExperienceComponent = ({ expRef }: experienceProps) => {
+  const router = useRouter();
+  const goToCompanyPorifle = (link: string) => {
+    router.push(link);
+  };
+
   return (
     <div
       id="experience"
@@ -16,8 +23,9 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
       </div>
       <div className="">
         <div
-          className="flex flex-col lg:flex-row lg:space-x-8  hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor"
+          className="flex flex-col lg:flex-row lg:space-x-8  hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor cursor-pointer"
           style={{ borderColor: "#1c2a46" }}
+          onClick={() => goToCompanyPorifle("https://binarylab.io/")}
         >
           <div className="text-seconTitleColor flex-none text-sm pt-1">
             2023 - PRESENT
@@ -25,13 +33,29 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
           <div className="">
             <h1 className="text-titleColor text-lg">
               Frontend Developer . Binary Lab
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className=" hover:mb-2 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
             </h1>
             <h4 className="text-seconTitleColor">Senior Frontend Developer</h4>
             <p className="text-primaryColor text-md py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              adipisci temporibus nostrum praesentium laboriosam! Quaerat
-              possimus, ea est velit et illum consectetur eos nisi commodi.
-              Ratione impedit accusantium veniam voluptates.
+              Collaborated closely with design and development teams to
+              implement and enhance the frontend of the Newsmast social app
+              using React and Next.js. Spearheaded the development of
+              Progressive Web Applications (PWAs) and websites catering to both
+              end-users and administrative functionalities. Operated within the
+              framework of Agile Scrum methodology, ensuring an efficient and
+              collaborative development process.
             </p>
             {/* programming languages */}
             <div className="flex flex-wrap pt-3 gap-4">
@@ -65,8 +89,9 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
       </div>
       <div className="">
         <div
-          className="flex flex-col lg:flex-row lg:space-x-8 hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor"
+          className="flex flex-col lg:flex-row lg:space-x-8 hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor cursor-pointer"
           style={{ borderColor: "#1c2a46" }}
+          onClick={() => goToCompanyPorifle("https://ultimatemyanmar.com/")}
         >
           <div className="text-seconTitleColor flex-none  text-sm pt-1">
             SEP - DEC 2022
@@ -74,13 +99,27 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
           <div className="">
             <h1 className="text-titleColor text-lg">
               Developer . Ultimate Solutions
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className=" hover:mb-2 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
             </h1>
             <h4 className="text-seconTitleColor">Mid Frontend Developer</h4>
             <p className="text-primaryColor text-md py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              adipisci temporibus nostrum praesentium laboriosam! Quaerat
-              possimus, ea est velit et illum consectetur eos nisi commodi.
-              Ratione impedit accusantium veniam voluptates.
+              Implement new features in website by using especially with Next JS
+              and Material UI. Develop tasks with reusable and efficiency code
+              for quality control and maintenance. Creating the development
+              plans daily and data analyzed for projects and code review.
+              Project is a web applications for office clients
             </p>
             {/* programming languages */}
             <div className="flex flex-wrap pt-3 gap-4">
@@ -114,8 +153,11 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
       </div>
       <div className="">
         <div
-          className="flex flex-col lg:flex-row lg:space-x-8 hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor"
+          className="flex flex-col lg:flex-row lg:space-x-8 hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor cursor-pointer"
           style={{ borderColor: "#1c2a46" }}
+          onClick={() =>
+            goToCompanyPorifle("https://www.myanmarhighsociety.com/")
+          }
         >
           <div className="text-seconTitleColor flex-none  text-sm pt-1 w-24">
             2020 - 2022
@@ -123,13 +165,28 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
           <div className="">
             <h1 className="text-titleColor text-lg">
               Developer . Myanmar High Society
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className=" hover:mb-2 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
             </h1>
             <h4 className="text-seconTitleColor">Mid Frontend Developer</h4>
             <p className="text-primaryColor text-md py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              adipisci temporibus nostrum praesentium laboriosam! Quaerat
-              possimus, ea est velit et illum consectetur eos nisi commodi.
-              Ratione impedit accusantium veniam voluptates.
+              Identify the requirements, scope, design and improvements with the
+              teams and language used React Js, Bootstrap, Tailwind.. Develop
+              all the project tasks with reusable and efficiency code for
+              quality control and maintenance. Work on Agile scrum methodology
+              process. The projects I have done are commerce web applications,
+              education websites and office websites
             </p>
             {/* programming languages */}
             <div className="flex flex-wrap pt-3 gap-4">

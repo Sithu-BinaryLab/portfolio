@@ -5,7 +5,7 @@ export const FooterComponent = () => {
     <div className="pt-2 pb-24">
       <p className="text-primaryColor text-sm">
         Loosely designed
-        <span className="text-highLightColor">in</span> Visual Studio Code by
+        <span className="text-highLightColor"> in</span> Visual Studio Code by
         yours truly. Built
         <span className="text-highLightColor"> with </span> Next.js and Tailwind
         <span className="text-highLightColor"> CSS</span>, deployed{" "}
