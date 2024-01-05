@@ -64,7 +64,7 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
 
         <div>
           <h1 className="text-titleColor text-lg">
-            MyPet | Myanmar's Best Pet Supplies!
+            MyPet | Myanmar&apos;s Best Pet Supplies! MyPet
           </h1>
           <p className="text-primaryColor text-md py-2">
             MyPet is an online Pet Store in Myanmar. Dog Food & Snack, Cat Food
