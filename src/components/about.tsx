@@ -7,30 +7,44 @@ interface aboutProps {
 export const AboutComponent = ({ aboutRef }: aboutProps) => {
   return (
     <div className="" id="about" ref={aboutRef}>
-      <div className="sticky top-0 z-20 -ml-6 -mr-14 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"><h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2></div>
+      <div className="sticky top-0 z-20 -ml-6 -mr-14 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+          About
+        </h2>
+      </div>
+
       <p className="text-primaryColor">
-        Back in 2012, I decided to try my hand at creating custom Tumblr themes
-        and tumbled head first into the rabbit hole of coding and web
-        development. Fast-forward to today, and I’ve had the privilege of
-        building software for an
-        <span className="text-highLightColor">advertising agency</span>, a
-        <span className="text-highLightColor"> start-up</span>, a student-led
-        design studio, and a
-        <span className="text-highLightColor"> huge corporation</span>.
+        Having embarked on my academic journey at Technology University in{" "}
+        <span className="text-highLightColor">2014</span>, I earned a degree
+        with a major in Information Technology. Throughout my university years,
+        I immersed myself in a comprehensive curriculum, specializing in
+        <span className="text-highLightColor"> Networking</span>,{" "}
+        <span className="text-highLightColor">Programming</span>,{" "}
+        <span className="text-highLightColor">Database Management</span>,{" "}
+        <span className="text-highLightColor">Cloud Computing</span>,{" "}
+        <span className="text-highLightColor">AI</span>, and{" "}
+        <span className="text-highLightColor">Web Development</span>.
+        {/* Reflecting on those formative years, I cherish the unique experiences of student
+        life and carry forward a passion for continuous learning and innovation. */}
       </p>
       <p className="text-primaryColor pt-6">
-        My main focus these days is building products and leading projects for
-        our clients at <span className="text-highLightColor"> Upstatement</span>
-        . In my free time I&apos;ve also released an
-        <span className="text-secondPrimaryColor"> online video course </span>
-        that covers everything you need to know to build a web app with the
-        Spotify API.
+        Proficient in Java, PHP, and JavaScript, I specialize in AI development
+        and have successfully brought my own conceptualized applications and
+        websites to life.
+        {/* Currently,  */} &nbsp;I am &nbsp;
+        {/* deepening my expertise by delving into
+        React Native and C# programming,  */}
+        aiming to enhance my capabilities for a diverse range of development
+        projects.
       </p>
 
       <p className="text-primaryColor pt-6">
-        When I’m not at the computer, I’m usually rock climbing, hanging out
-        with my wife and two cats, or running around Hyrule searching for Korok
-        seeds <span className="text-highLightColor"> Korokseeds </span> .
+        When away from coding, I indulge in the pleasures of{" "}
+        <span className="text-highLightColor">reading</span> and{" "}
+        <span className="text-highLightColor">movies</span>, finding solace in
+        the written word and cinematic narratives. I take joy in extending a
+        helping hand to friends, fostering a sense of connection and shared
+        well-being.
       </p>
     </div>
   );
