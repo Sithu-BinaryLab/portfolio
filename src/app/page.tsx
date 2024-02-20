@@ -13,12 +13,10 @@ import { FullProjectComponent } from "@/components/full-project";
 import { FooterComponent } from "@/components/footer";
 
 function Spotlight() {
-
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
   const containerRef = useRef(null);
   const expRef = useRef(null);
-
 
   const [spotlightPosition, setSpotlightPosition] = useState({ x: 0, y: 0 });
 
@@ -27,17 +25,24 @@ function Spotlight() {
   };
 
   return (
-    <div ref={containerRef} className="relative h-screen overflow-y-scroll"
+    <div
+      ref={containerRef}
+      className="relative h-screen overflow-y-scroll"
       onMouseMove={handleMouseMove}
       style={{
-        background: `radial-gradient(600px at ${spotlightPosition.x}px ${spotlightPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+        background: `radial-gradient(600px at ${spotlightPosition.x}px ${spotlightPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
       }}
     >
       <div className="mx-auto flex lg:flex-row flex-col max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-x-4">
         {/* Left Column - Sticky */}
         <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
           <ProfileComponent />
-          <TabComponent aboutRef={aboutRef} projectRef={projectRef} expRef={expRef} containerRef={containerRef} />
+          <TabComponent
+            aboutRef={aboutRef}
+            projectRef={projectRef}
+            expRef={expRef}
+            containerRef={containerRef}
+          />
           <div className="ml-1 mt-8 flex items-center">
             <ConnectLink />
           </div>
@@ -50,12 +55,11 @@ function Spotlight() {
           <FullResumeComponent />
           <ProjectComponent projectRef={projectRef} />
           <FullProjectComponent />
+
           <FooterComponent />
         </div>
-
       </div>
     </div>
-
   );
 }
 
