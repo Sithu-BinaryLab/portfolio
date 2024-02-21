@@ -203,7 +203,7 @@ const Archivepages = () => {
                     <li className="mb-1 flex items-center">
                       <a
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-teal-300 group/link text-sm"
-                        href="https://www.gescchinese.com/"
+                        href="https://admin.gescchinese.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         aria-label="apps.apple.com (opens in a new tab)"

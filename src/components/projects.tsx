@@ -39,7 +39,7 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
       <div
         className="flex flex-col lg:flex-row  gap-y-4 lg:space-x-8 my-12 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor cursor-pointer"
         style={{ borderColor: "#1c2a46" }}
-        onClick={() => goToProjectLink("https://www.gescchinese.com/")}
+        onClick={() => goToProjectLink("https://admin.gescchinese.com/")}
       >
         <img
           src="/images/gesc_admin.webp"
