@@ -19,6 +19,27 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
       <div
         className="flex flex-col lg:flex-row gap-y-4 lg:space-x-8 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor cursor-pointer"
         style={{ borderColor: "#1c2a46" }}
+        onClick={() => goToProjectLink("https://charprotocol.dev")}
+      >
+        <img
+          src="/images/crosspay.png"
+          className="border border-hoverColor rounded-md w-40 h-20"
+          alt="Picture of newsmast"
+        />
+
+        <div>
+          <h1 className="text-titleColor text-lg">
+            CPcash | Fast and Reliable Crypto Transfers
+          </h1>
+          <p className="text-primaryColor text-md py-2">
+            Fast, reliable, encrypted transfer no registration required,
+            completely anonymous, easily protecting your financial privacy.
+          </p>
+        </div>
+      </div>
+      <div
+        className="flex flex-col lg:flex-row  gap-y-4 lg:space-x-8 my-12 hover:border hover:rounded-md px-4 pt-5 pb-2 hover:bg-hoverColor cursor-pointer"
+        style={{ borderColor: "#1c2a46" }}
         onClick={() => goToProjectLink("https://newsmast.org")}
       >
         <img
@@ -54,7 +75,7 @@ export const ProjectComponent = ({ projectRef }: projectProps) => {
           <p className="text-primaryColor text-md py-2">
             Developed an advanced admin dashboard tailored for language centers,
             functioning as a comprehensive ERP system to efficiently manage and
-            streamline diverse operations, from student enrollment, ...
+            streamline ...
             {/* scheduling to resource allocation and performance tracking. */}
           </p>
         </div>
