@@ -25,10 +25,76 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
         <div
           className="flex flex-col lg:flex-row lg:space-x-8  hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor cursor-pointer"
           style={{ borderColor: "#1c2a46" }}
+          onClick={() => goToCompanyPorifle("https://www.merypto.com/")}
+        >
+          <div className="text-seconTitleColor flex-none text-sm pt-1">
+            OCT 2024 - PRESENT
+          </div>
+          <div className="">
+            <h1 className="text-titleColor text-lg">
+              Frontend Developer . Merypto
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className=" hover:mb-2 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </h1>
+            <h4 className="text-seconTitleColor">Senior Frontend Developer</h4>
+            <p className="text-primaryColor text-md py-2">
+              Collaborated closely with design and development teams to
+              implement and enhance the frontend of the Newsmast social app
+              using React and Next.js. Spearheaded the development of
+              Progressive Web Applications (PWAs) and websites catering to both
+              end-users and administrative functionalities. Operated within the
+              framework of Agile Scrum methodology, ensuring an efficient and
+              collaborative development process.
+            </p>
+            {/* programming languages */}
+            <div className="flex flex-wrap pt-3 gap-4">
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                Next JS
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                RQuery
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                TypeScript
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                Tailwind
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="">
+        <div
+          className="flex flex-col lg:flex-row lg:space-x-8  hover:border hover:rounded-md px-4 py-6 hover:bg-hoverColor cursor-pointer"
+          style={{ borderColor: "#1c2a46" }}
           onClick={() => goToCompanyPorifle("https://binarylab.io/")}
         >
           <div className="text-seconTitleColor flex-none text-sm pt-1">
-            2023 - PRESENT
+            JAN 2023 - SEP 2024
           </div>
           <div className="">
             <h1 className="text-titleColor text-lg">
