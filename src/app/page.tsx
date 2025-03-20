@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 
 // components
 import { ProfileComponent } from "@/components/side-bar/profile";
@@ -23,6 +24,10 @@ function Spotlight() {
   const handleMouseMove = (e: any) => {
     setSpotlightPosition({ x: e.clientX, y: e.clientY });
   };
+  const TawkChatRef = useRef<{
+    toggle: () => void;
+    minimize: () => void;
+  } | null>(null);
 
   return (
     <div
@@ -57,6 +62,11 @@ function Spotlight() {
           <FullProjectComponent />
 
           <FooterComponent />
+          <TawkMessengerReact
+            propertyId="67dbc2d4286190190dbc248c"
+            widgetId="1imp723ks"
+            ref={TawkChatRef}
+          />
         </div>
       </div>
     </div>
