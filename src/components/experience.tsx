@@ -49,13 +49,10 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
             </h1>
             <h4 className="text-seconTitleColor">Senior Frontend Developer</h4>
             <p className="text-primaryColor text-md py-2">
-              Collaborated closely with design and development teams to
-              implement and enhance the frontend of the Newsmast social app
-              using React and Next.js. Spearheaded the development of
-              Progressive Web Applications (PWAs) and websites catering to both
-              end-users and administrative functionalities. Operated within the
-              framework of Agile Scrum methodology, ensuring an efficient and
-              collaborative development process.
+              Merypto is a software engineering consultancy focused on crypto.
+              We combine a passion for high quality engineering, a keen
+              understanding of business strategy, and a deep knowledge of the
+              burgeoning blockchain ecosystem.
             </p>
             {/* programming languages */}
             <div className="flex flex-wrap pt-3 gap-4">
