@@ -43,8 +43,139 @@ body {
   border: 1px solid var(--primary);
 }
 
-
 .box:hover {
   border-color: #1c2a46;
   /* Border color on hover */
+}
+
+.building {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  background-color: #333; /* Dark grey for modern look */
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  animation: shake 5s ease-in-out infinite;
+}
+
+.roof {
+  width: 100%;
+  height: 40px;
+  background-color: #1c1c1c; /* Darker grey for the roof */
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  transform-origin: top center;
+}
+
+.body {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: #555; /* Slightly lighter grey for the body */
+}
+
+.windows {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.window {
+  width: 70px;
+  height: 100px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Semi-transparent glass effect */
+  border: 2px solid #2d2d2d;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  animation: window-glow 3s ease-in-out infinite;
+}
+
+.door {
+  width: 100px;
+  height: 150px;
+  background-color: #1c1c1c;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flag {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+}
+
+.flag-pole {
+  width: 10px;
+  height: 150px;
+  background-color: #777; /* Metallic flagpole */
+}
+
+.flag-banner {
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(
+    45deg,
+    #00bcd4,
+    #03a9f4
+  ); /* Digital flag with gradient colors */
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  border-radius: 5px;
+  animation: flag-wave 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes window-glow {
+  0%,
+  100% {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    background-color: rgba(0, 255, 255, 0.6); /* Tech-style glow */
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.5);
+  }
+}
+
+@keyframes flag-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
 }
