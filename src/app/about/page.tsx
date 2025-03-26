@@ -47,7 +47,7 @@ const Archivepages = () => {
                 Background
               </h1>
               <p className="text-primaryColor">
-                I graduated with a Bachelor's degree in Engineering, majoring in
+                I graduated with a Bachelor degree in Engineering, majoring in
                 Information Technology, from a Technology University. Over the
                 course of my 6-year program, I developed and worked on several
                 tasks and projects, gaining hands-on experience in technology
