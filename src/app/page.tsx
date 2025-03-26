@@ -12,6 +12,7 @@ import { ProjectComponent } from "@/components/projects";
 import ConnectLink from "@/components/side-bar/connect-link";
 import { FullProjectComponent } from "@/components/full-project";
 import { FooterComponent } from "@/components/footer";
+import { FullAboutComponent } from "@/components/full-about";
 
 function Spotlight() {
   const aboutRef = useRef(null);
@@ -56,6 +57,7 @@ function Spotlight() {
         {/* Right Column - Scrolling */}
         <div className="pt-24 lg:w-1/2 lg:py-24">
           <AboutComponent aboutRef={aboutRef} />
+          <FullAboutComponent />
           <ExperienceComponent expRef={expRef} />
           <FullResumeComponent />
           <ProjectComponent projectRef={projectRef} />

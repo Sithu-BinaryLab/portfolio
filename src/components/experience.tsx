@@ -13,7 +13,7 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
   return (
     <div
       id="experience"
-      className="max-w-screen-md flex gap-y-10 flex-col mt-20"
+      className="max-w-screen-md flex gap-y-10 flex-col"
       ref={expRef}
     >
       <div className="sticky top-0 z-20 -mx-6 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
