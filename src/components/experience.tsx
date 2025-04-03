@@ -55,12 +55,24 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
               burgeoning blockchain ecosystem.
             </p>
             {/* programming languages */}
-            <div className="flex flex-wrap pt-3 gap-4">
+            <div className="flex flex-wrap pt-3 gap-1">
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
                 Next JS
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                React JS
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                Vue JS
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
@@ -78,7 +90,19 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
+                Zustand
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
                 Tailwind
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                Framer
               </button>
             </div>
           </div>
@@ -121,7 +145,7 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
               collaborative development process.
             </p>
             {/* programming languages */}
-            <div className="flex flex-wrap pt-3 gap-4">
+            <div className="flex flex-wrap pt-3 gap-1">
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
@@ -132,19 +156,44 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
+                React JS
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                Typescript
+              </button>
+
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
                 RQuery
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                TypeScript
+                NPM
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                Shadcn
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
                 Tailwind
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                PWA
               </button>
             </div>
           </div>
@@ -185,7 +234,7 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
               Project is a web applications for office clients
             </p>
             {/* programming languages */}
-            <div className="flex flex-wrap pt-3 gap-4">
+            <div className="flex flex-wrap pt-3 gap-1">
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
@@ -252,18 +301,24 @@ export const ExperienceComponent = ({ expRef }: experienceProps) => {
               education websites and office websites
             </p>
             {/* programming languages */}
-            <div className="flex flex-wrap pt-3 gap-4">
+            <div className="flex flex-wrap pt-3 gap-1">
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
-                React
+                React JS
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
                 style={{ backgroundColor: "#132f4a" }}
               >
                 Redux
+              </button>
+              <button
+                className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
+                style={{ backgroundColor: "#132f4a" }}
+              >
+                Firebase
               </button>
               <button
                 className="border border-none text-xs py-2 px-4 rounded-full text-languageColor"
