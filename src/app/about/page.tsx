@@ -167,61 +167,45 @@ const Archivepages = () => {
             Frontend
           </h1>
           <div className="text-primaryColor mt-4">
-            My primary skill is in frontend development, with a strong focus on
-            building responsive and user-friendly interfaces. I am also
-            proficient in backend development, with experience in PHP and the
-            Laravel framework as my first backend language, followed by JAVA.
-            Currently, I am working with Node.js for backend development.
-            Additionally, I have experience developing mobile applications using
-            React Native with Expo and Android development with Java.
+            I have developed eCommerce apps, informational websites, admin
+            dashboards, social media apps, music streaming apps, and Web3
+            blockchain apps as a frontend developer. My frontend skills include
+            Next.js, React.js, Vue.js, TypeScript, JavaScript, Bootstrap, MUI,
+            Tailwind, ShadCN, CSS, Three.js, Framer Motion, React Query, Redux,
+            React Toolkit, Context API, Zustand, and Jotai.
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl flex justify-end">
             Backend
           </h1>
           <div className="text-primaryColor mt-4">
-            My primary skill is in frontend development, with a strong focus on
-            building responsive and user-friendly interfaces. I am also
-            proficient in backend development, with experience in PHP and the
-            Laravel framework as my first backend language, followed by JAVA.
-            Currently, I am working with Node.js for backend development.
-            Additionally, I have experience developing mobile applications using
-            React Native with Expo and Android development with Java.
+            I also have experience in backend development. I first started with
+            databases, beginning with MySQL, then MongoDB and Firebase. I have
+            also used Prisma for Next.js applications. My backend languages
+            include PHP, Laravel, Node.js, Express.js, Java, and Spring Boot.
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl flex justify-end">
             AWS
           </h1>
           <div className="text-primaryColor mt-4">
-            My primary skill is in frontend development, with a strong focus on
-            building responsive and user-friendly interfaces. I am also
-            proficient in backend development, with experience in PHP and the
-            Laravel framework as my first backend language, followed by JAVA.
-            Currently, I am working with Node.js for backend development.
-            Additionally, I have experience developing mobile applications using
-            React Native with Expo and Android development with Java.
+            I am especially interested in cloud computing and am currently
+            learning AWS. I have experience with CI/CD pipelines and Lambda
+            functions. I have an AWS certification from the GIC training class.
+            My primary goal is to become a DevOps engineer.
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl flex justify-start">
             WEB 3
           </h1>
           <div className="text-primaryColor mt-4">
-            My primary skill is in frontend development, with a strong focus on
-            building responsive and user-friendly interfaces. I am also
-            proficient in backend development, with experience in PHP and the
-            Laravel framework as my first backend language, followed by JAVA.
-            Currently, I am working with Node.js for backend development.
-            Additionally, I have experience developing mobile applications using
-            React Native with Expo and Android development with Java.
+            I am currently working as a frontend blockchain developer. Today,
+            having experience in Web3 technology is essential.
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl flex justify-start">
             AI
           </h1>
           <div className="text-primaryColor mt-4">
-            My primary skill is in frontend development, with a strong focus on
-            building responsive and user-friendly interfaces. I am also
-            proficient in backend development, with experience in PHP and the
-            Laravel framework as my first backend language, followed by JAVA.
-            Currently, I am working with Node.js for backend development.
-            Additionally, I have experience developing mobile applications using
-            React Native with Expo and Android development with Java.
+            My AI skills are limited, but I have used trained models from
+            TensorFlow and developed applications. My thesis was based on AI,
+            and I have graduated.
           </div>
         </div>
       </div>
