@@ -8,7 +8,7 @@ export const FullAboutComponent = () => {
     router.push("/about");
   };
   return (
-    <div className="pt-5" onClick={goToAbout}>
+    <div className="pt-5 pb-5 sm:pb-5 md:pb-0" onClick={goToAbout}>
       <a
         className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
         aria-label="View Full Project Archive"
