@@ -1,12 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 
 const SkillsPage = () => {
   const router = useRouter();
-  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
+  const [hoveredSkill, setHoveredSkill] = useState<{
+    name: string;
+    description: string;
+    category: string;
+  } | null>(null);
 
   const skillCategories = [
     {
@@ -15,27 +19,52 @@ const SkillsPage = () => {
         {
           name: "Next.js",
           description: "React framework for SSR/SSG applications",
+          proficiency: 90,
         },
-        { name: "React", description: "JavaScript library for building UIs" },
-        { name: "Vue", description: "Progressive JavaScript framework" },
-        { name: "TypeScript", description: "Typed superset of JavaScript" },
-        { name: "JavaScript", description: "Programming language for the web" },
-        { name: "Tailwind CSS", description: "Utility-first CSS framework" },
+        {
+          name: "React",
+          description: "JavaScript library for building UIs",
+          proficiency: 95,
+        },
+        {
+          name: "Vue",
+          description: "Progressive JavaScript framework",
+          proficiency: 80,
+        },
+        {
+          name: "TypeScript",
+          description: "Typed superset of JavaScript",
+          proficiency: 85,
+        },
+        {
+          name: "JavaScript",
+          description: "Programming language for the web",
+          proficiency: 90,
+        },
+        {
+          name: "Tailwind CSS",
+          description: "Utility-first CSS framework",
+          proficiency: 85,
+        },
         {
           name: "SASS/SCSS",
           description: "CSS preprocessor with advanced features",
+          proficiency: 80,
         },
         {
           name: "MUI",
           description: "React component library based on Material Design",
+          proficiency: 75,
         },
         {
           name: "Redux",
           description: "Predictable state container for JavaScript apps",
+          proficiency: 85,
         },
         {
           name: "React Query",
           description: "Hooks for fetching, caching and updating data",
+          proficiency: 80,
         },
       ],
       icon: (
@@ -54,6 +83,7 @@ const SkillsPage = () => {
         </svg>
       ),
       color: "border-blue-400/30 bg-blue-900/10",
+      accent: "bg-blue-400",
     },
     {
       name: "Backend Development",
@@ -61,25 +91,53 @@ const SkillsPage = () => {
         {
           name: "Node.js",
           description: "JavaScript runtime built on Chrome's V8",
+          proficiency: 85,
         },
         {
           name: "Express",
           description: "Minimalist web framework for Node.js",
+          proficiency: 80,
         },
-        { name: "Java", description: "Object-oriented programming language" },
+        {
+          name: "Java",
+          description: "Object-oriented programming language",
+          proficiency: 75,
+        },
         {
           name: "Spring Boot",
           description: "Framework for creating stand-alone Spring applications",
+          proficiency: 70,
         },
-        { name: "Python", description: "High-level programming language" },
-        { name: "Django", description: "High-level Python web framework" },
-        { name: "MySQL", description: "Relational database management system" },
+        {
+          name: "Python",
+          description: "High-level programming language",
+          proficiency: 80,
+        },
+        {
+          name: "Django",
+          description: "High-level Python web framework",
+          proficiency: 75,
+        },
+        {
+          name: "MySQL",
+          description: "Relational database management system",
+          proficiency: 85,
+        },
         {
           name: "PostgreSQL",
           description: "Powerful open-source relational database",
+          proficiency: 80,
         },
-        { name: "MongoDB", description: "NoSQL document-oriented database" },
-        { name: "GraphQL", description: "Query language for APIs" },
+        {
+          name: "MongoDB",
+          description: "NoSQL document-oriented database",
+          proficiency: 75,
+        },
+        {
+          name: "GraphQL",
+          description: "Query language for APIs",
+          proficiency: 80,
+        },
       ],
       icon: (
         <svg
@@ -97,19 +155,41 @@ const SkillsPage = () => {
         </svg>
       ),
       color: "border-purple-400/30 bg-purple-900/10",
+      accent: "bg-purple-400",
     },
     {
       name: "Cloud & DevOps",
       skills: [
-        { name: "AWS Lambda", description: "Serverless compute service" },
-        { name: "AWS EC2", description: "Scalable cloud computing service" },
-        { name: "AWS S3", description: "Object storage service" },
+        {
+          name: "AWS Lambda",
+          description: "Serverless compute service",
+          proficiency: 75,
+        },
+        {
+          name: "AWS EC2",
+          description: "Scalable cloud computing service",
+          proficiency: 70,
+        },
+        {
+          name: "AWS S3",
+          description: "Object storage service",
+          proficiency: 80,
+        },
         {
           name: "Docker",
           description: "Platform for containerizing applications",
+          proficiency: 85,
         },
-        { name: "Kubernetes", description: "Container orchestration system" },
-        { name: "Terraform", description: "Infrastructure as code tool" },
+        {
+          name: "Kubernetes",
+          description: "Container orchestration system",
+          proficiency: 70,
+        },
+        {
+          name: "Terraform",
+          description: "Infrastructure as code tool",
+          proficiency: 65,
+        },
       ],
       icon: (
         <svg
@@ -127,6 +207,7 @@ const SkillsPage = () => {
         </svg>
       ),
       color: "border-green-400/30 bg-green-900/10",
+      accent: "bg-green-400",
     },
     {
       name: "Blockchain",
@@ -134,12 +215,18 @@ const SkillsPage = () => {
         {
           name: "Ethereum",
           description: "Blockchain platform for smart contracts",
+          proficiency: 70,
         },
         {
           name: "Solidity",
           description: "Programming language for Ethereum smart contracts",
+          proficiency: 75,
         },
-        { name: "Web3.js", description: "JavaScript library for Ethereum" },
+        {
+          name: "Web3.js",
+          description: "JavaScript library for Ethereum",
+          proficiency: 70,
+        },
       ],
       icon: (
         <svg
@@ -157,6 +244,7 @@ const SkillsPage = () => {
         </svg>
       ),
       color: "border-yellow-400/30 bg-yellow-900/10",
+      accent: "bg-yellow-400",
     },
     {
       name: "Mobile Development",
@@ -164,10 +252,12 @@ const SkillsPage = () => {
         {
           name: "React Native",
           description: "Framework for building native apps with React",
+          proficiency: 75,
         },
         {
           name: "Flutter",
           description: "UI toolkit for building natively compiled applications",
+          proficiency: 60,
         },
       ],
       icon: (
@@ -186,11 +276,12 @@ const SkillsPage = () => {
         </svg>
       ),
       color: "border-pink-400/30 bg-pink-900/10",
+      accent: "bg-pink-400",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-100 p-8">
+    <div className="min-h-screen bg-gray-950 text-gray-100 p-4 sm:p-8">
       <div className="max-w-6xl mx-auto">
         {/* Back Button */}
         <button
@@ -212,34 +303,54 @@ const SkillsPage = () => {
           Go Back
         </button>
 
-        <h1 className="text-4xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-600">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-600"
+        >
           Technical Skills
-        </h1>
+        </motion.h1>
 
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {skillCategories.map((category) => (
             <motion.div
               key={category.name}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
-              className={`p-6 rounded-xl border ${category.color}`}
+              className={`p-5 sm:p-6 rounded-xl border ${category.color} shadow-lg`}
             >
-              <h2 className="text-xl font-semibold text-white mb-4 flex items-center">
-                {category.icon}
-                {category.name}
-              </h2>
+              <div className="flex items-center mb-4">
+                <div
+                  className={`w-1 h-8 rounded-full ${category.accent} mr-3`}
+                ></div>
+                <h2 className="text-lg sm:text-xl font-semibold text-white flex items-center">
+                  {category.icon}
+                  {category.name}
+                </h2>
+              </div>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
                 {category.skills.map((skill) => (
                   <motion.div
                     key={skill.name}
                     whileHover={{ scale: 1.05 }}
-                    onMouseEnter={() => setHoveredSkill(skill.name)}
+                    onMouseEnter={() =>
+                      setHoveredSkill({
+                        name: skill.name,
+                        description: skill.description,
+                        category: category.name,
+                      })
+                    }
                     onMouseLeave={() => setHoveredSkill(null)}
-                    className="px-4 py-2 rounded-lg bg-gray-800/70 text-gray-300 border border-gray-700 hover:bg-teal-400/10 hover:border-teal-400/30 hover:text-teal-300 transition-colors cursor-default"
+                    className="relative px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-gray-800/70 text-gray-300 border border-gray-700 hover:bg-teal-400/10 hover:border-teal-400/30 hover:text-teal-300 transition-colors cursor-default group"
                   >
                     {skill.name}
+                    <div
+                      className="absolute bottom-0 left-0 h-1 bg-teal-400/50 rounded-b-lg"
+                      style={{ width: `${skill.proficiency}%` }}
+                    />
                   </motion.div>
                 ))}
               </div>
@@ -248,21 +359,29 @@ const SkillsPage = () => {
         </div>
 
         {/* Skill description panel */}
-        {hoveredSkill && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg shadow-xl border border-gray-700 z-50 max-w-md text-center"
-          >
-            <p className="text-teal-400 font-medium">{hoveredSkill}</p>
-            <p className="text-sm">
-              {skillCategories
-                .flatMap((c) => c.skills)
-                .find((s) => s.name === hoveredSkill)?.description ||
-                `Experience with ${hoveredSkill}`}
-            </p>
-          </motion.div>
-        )}
+        <AnimatePresence>
+          {hoveredSkill && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ type: "spring", damping: 25 }}
+              className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-3 rounded-lg shadow-xl border border-gray-700 z-50 max-w-xs sm:max-w-md w-full"
+            >
+              <div className="flex justify-between items-start mb-1">
+                <h3 className="text-teal-400 font-medium">
+                  {hoveredSkill.name}
+                </h3>
+                <span className="text-xs text-gray-400 bg-gray-800 px-2 py-1 rounded">
+                  {hoveredSkill.category}
+                </span>
+              </div>
+              <p className="text-sm text-gray-300">
+                {hoveredSkill.description}
+              </p>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
