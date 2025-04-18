@@ -51,7 +51,7 @@ function Spotlight() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://yourportfolio.com/" // Replace with your actual URL
+          content="https://sithulwin.dev/" // Replace with your actual URL
         />
         <meta
           property="og:title"
@@ -63,7 +63,7 @@ function Spotlight() {
         />
         <meta
           property="og:image"
-          content="https://yourportfolio.com/profile.jpg" // Updated to point to profile.jpg
+          content="https://sithulwin.dev/profile.jpg" // Updated to point to profile.jpg
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
